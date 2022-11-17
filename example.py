@@ -1,3 +1,4 @@
+import random
 import math
 import re
 from unittest import result
@@ -131,4 +132,77 @@ def nums_and_squares_dic():
     print(dic_result)
 
 
-nums_and_squares_dic()
+# nums_and_squares_dic()
+
+cordinate = 4
+photoshop = 6
+coreldraw = 3
+figma = 1
+dell = 2
+adobe = 7
+getresponse = 5
+email = 9
+freelance = 8
+programming = 10
+
+opts = ('cordinate', 'photoshop', 'coreldraw', 'figma', 'dell', 'adobe', 'getresponse',
+        'email', 'freelance', 'programming', '4', '6', '3', '1', '2', '7', '5', '9', '8', '10')
+
+# user_input = input('enter field...')
+# if user_input in opts:
+#     print(user_input, 'is present')
+# elif user_input not in opts:
+#     print(user_input, 'not present')
+
+
+def solving_for_yt():
+    t = random.randint(-9, 91)
+    y = 0
+    if t < 0:
+        y = -(3 * t**2) + (3 * t) - 5
+    elif t > 0:
+        y = (3 * t**2) - (3 * t) - 5
+    else:
+        y = (3 * t**2) - (3 * t) + 5
+    print(y)
+
+
+solving_for_yt()
+
+
+def swap(a, b):
+    print('A = %d, B = %d' % (b, a))
+
+
+# swap(2, 3)
+
+
+def min6(array):
+    for i in range(len(array)):
+        temp = min(array)
+    print(temp)
+
+
+# min6([89, 3, 4, 5, 7])
+
+
+def check_triangle(x, y, z):
+    if (x + y <= z) or (x + z <= y) or (y + z <= x):
+        return print('not a valid triangle')
+    else:
+        return print('valid triangle')
+
+
+check_triangle(2, 3, 8)
+
+
+class Triangle:
+    def proper_triangle(self):
+        print('proper triangle')
+
+    def isoceles(self):
+        print('isoceles triangle')
+
+
+tri = Triangle()
+tri.proper_triangle()
